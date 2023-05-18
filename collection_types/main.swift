@@ -89,7 +89,21 @@ if weather == -273 {
 
 //Create a rock paper scissors game.
 
-let  player1Choice = "rock"
+let  player1Choice = "scissors"
 let  player2Choice = "paper"
-
+if player1Choice == player2Choice {
+    print("Draw")
+}else if player1Choice == "rock" && player2Choice == "paper"{
+    print("Player 2 Won")
+}else if player1Choice == "rock" && player2Choice == "scissors"{
+    print("Player 1 Won")
+}else if player1Choice == "paper" && player2Choice == "scissors"{
+    print("Player 2 Won")
+}else if player1Choice == "paper" && player2Choice == "rock"{
+    print("Player 1 Won")
+}else if player1Choice == "scissors" && player2Choice == "paper"{
+    print("Player 1 Won")
+}else if player1Choice == "scissors" && player2Choice == "rock"{
+    print("Player 2 Won")
+}
 
